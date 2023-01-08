@@ -146,32 +146,32 @@ namespace Hastane
             this.panel_BolumGuncelle.Controls.Add(this.label2);
             this.panel_BolumGuncelle.Controls.Add(this.textBox1);
             this.panel_BolumGuncelle.Controls.Add(this.button1);
-<<<<<<< HEAD
+
             this.panel_BolumGuncelle.Location = new System.Drawing.Point(6, 82);
             this.panel_BolumGuncelle.Name = "panel_BolumGuncelle";
             this.panel_BolumGuncelle.Size = new System.Drawing.Size(446, 125);
-=======
+
             this.panel_BolumGuncelle.Location = new System.Drawing.Point(4, 53);
             this.panel_BolumGuncelle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel_BolumGuncelle.Name = "panel_BolumGuncelle";
             this.panel_BolumGuncelle.Size = new System.Drawing.Size(297, 81);
->>>>>>> 79fbb34b7bfcdc9c894308ffec30159d381aa701
+
             this.panel_BolumGuncelle.TabIndex = 21;
             this.panel_BolumGuncelle.Visible = false;
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
+
             this.button2.Location = new System.Drawing.Point(166, 61);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(107, 52);
-=======
+
             this.button2.Location = new System.Drawing.Point(111, 40);
             this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(71, 34);
->>>>>>> 79fbb34b7bfcdc9c894308ffec30159d381aa701
+
             this.button2.TabIndex = 19;
             this.button2.Text = "Sil";
             this.button2.UseVisualStyleBackColor = true;
@@ -179,31 +179,31 @@ namespace Hastane
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
+
             this.textBox1.Location = new System.Drawing.Point(166, 6);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(241, 32);
-=======
+
             this.textBox1.Location = new System.Drawing.Point(111, 4);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(162, 24);
->>>>>>> 79fbb34b7bfcdc9c894308ffec30159d381aa701
+
             this.textBox1.TabIndex = 20;
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
+
             this.button1.Location = new System.Drawing.Point(289, 61);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(118, 52);
-=======
+
             this.button1.Location = new System.Drawing.Point(193, 40);
             this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(79, 34);
->>>>>>> 79fbb34b7bfcdc9c894308ffec30159d381aa701
+
             this.button1.TabIndex = 18;
             this.button1.Text = "Güncelle";
             this.button1.UseVisualStyleBackColor = true;

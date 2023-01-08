@@ -7,13 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-<<<<<<< HEAD
 
 //
 
-=======
-//
->>>>>>> a39df78f70db342974166749cc7065111591e5ca
+
 namespace Hastane
 {
     public partial class FormGiris : Form
