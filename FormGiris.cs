@@ -28,5 +28,10 @@ namespace Hastane
             formBolumEkle.Show();
 
         }
+        //sa sde
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -16,5 +16,10 @@ namespace Hastane
         {
             InitializeComponent();
         }
+
+        private void FormBolumEkle_Load(object sender, EventArgs e)
+        {
+            //Sa 
+        }
     }
 }
