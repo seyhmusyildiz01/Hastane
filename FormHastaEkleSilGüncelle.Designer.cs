@@ -79,9 +79,9 @@ namespace Hastane
             this.groupBox3.Controls.Add(this.textBox8);
             this.groupBox3.Controls.Add(this.label16);
             this.groupBox3.Location = new System.Drawing.Point(8, 27);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(291, 359);
             this.groupBox3.TabIndex = 16;
             this.groupBox3.TabStop = false;
@@ -91,7 +91,7 @@ namespace Hastane
             // 
             this.maskedTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maskedTextBox3.Location = new System.Drawing.Point(105, 172);
-            this.maskedTextBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.maskedTextBox3.Margin = new System.Windows.Forms.Padding(2);
             this.maskedTextBox3.Mask = "(999) 000-0000";
             this.maskedTextBox3.Name = "maskedTextBox3";
             this.maskedTextBox3.Size = new System.Drawing.Size(162, 26);
@@ -100,7 +100,7 @@ namespace Hastane
             // button_HastaEkle
             // 
             this.button_HastaEkle.Location = new System.Drawing.Point(168, 291);
-            this.button_HastaEkle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_HastaEkle.Margin = new System.Windows.Forms.Padding(2);
             this.button_HastaEkle.Name = "button_HastaEkle";
             this.button_HastaEkle.Size = new System.Drawing.Size(97, 27);
             this.button_HastaEkle.TabIndex = 1;
@@ -133,7 +133,7 @@ namespace Hastane
             // 
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5.Location = new System.Drawing.Point(105, 209);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(162, 64);
@@ -154,7 +154,7 @@ namespace Hastane
             // 
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox6.Location = new System.Drawing.Point(105, 146);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(2);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(162, 26);
             this.textBox6.TabIndex = 8;
@@ -196,7 +196,7 @@ namespace Hastane
             // 
             this.maskedTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maskedTextBox4.Location = new System.Drawing.Point(105, 66);
-            this.maskedTextBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.maskedTextBox4.Margin = new System.Windows.Forms.Padding(2);
             this.maskedTextBox4.Mask = "00000000000";
             this.maskedTextBox4.Name = "maskedTextBox4";
             this.maskedTextBox4.Size = new System.Drawing.Size(162, 26);
@@ -207,7 +207,7 @@ namespace Hastane
             // 
             this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox7.Location = new System.Drawing.Point(105, 119);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(2);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(162, 26);
             this.textBox7.TabIndex = 3;
@@ -227,7 +227,7 @@ namespace Hastane
             // 
             this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox8.Location = new System.Drawing.Point(105, 92);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(2);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(162, 26);
             this.textBox8.TabIndex = 1;
@@ -248,7 +248,7 @@ namespace Hastane
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(2, 15);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
@@ -259,9 +259,9 @@ namespace Hastane
             // 
             this.groupBox_HastListesi.Controls.Add(this.dataGridView1);
             this.groupBox_HastListesi.Location = new System.Drawing.Point(303, 27);
-            this.groupBox_HastListesi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox_HastListesi.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox_HastListesi.Name = "groupBox_HastListesi";
-            this.groupBox_HastListesi.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox_HastListesi.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox_HastListesi.Size = new System.Drawing.Size(645, 361);
             this.groupBox_HastListesi.TabIndex = 18;
             this.groupBox_HastListesi.TabStop = false;
@@ -288,12 +288,11 @@ namespace Hastane
             this.oturumToolStripMenuItem.Name = "oturumToolStripMenuItem";
             this.oturumToolStripMenuItem.Size = new System.Drawing.Size(29, 22);
             this.oturumToolStripMenuItem.Text = "\"\"";
-           // this.oturumToolStripMenuItem.Click += new System.EventHandler(this.oturumToolStripMenuItem_Click);
             // 
             // çıkışToolStripMenuItem
             // 
             this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
-            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
             this.çıkışToolStripMenuItem.Text = "Çıkış";
             // 
             // düzenleToolStripMenuItem
@@ -309,19 +308,19 @@ namespace Hastane
             // hastaEkleToolStripMenuItem
             // 
             this.hastaEkleToolStripMenuItem.Name = "hastaEkleToolStripMenuItem";
-            this.hastaEkleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hastaEkleToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.hastaEkleToolStripMenuItem.Text = "Hasta Ekle";
             // 
             // doktorEkleToolStripMenuItem
             // 
             this.doktorEkleToolStripMenuItem.Name = "doktorEkleToolStripMenuItem";
-            this.doktorEkleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.doktorEkleToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.doktorEkleToolStripMenuItem.Text = "Doktor Ekle";
             // 
             // randevuEkleToolStripMenuItem
             // 
             this.randevuEkleToolStripMenuItem.Name = "randevuEkleToolStripMenuItem";
-            this.randevuEkleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.randevuEkleToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.randevuEkleToolStripMenuItem.Text = "Randevu Ekle";
             // 
             // yardımToolStripMenuItem
@@ -338,10 +337,11 @@ namespace Hastane
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.groupBox_HastListesi);
             this.Controls.Add(this.groupBox3);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormHastaEkleSilGüncelle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormHastaEkleSilGüncelle";
+            this.Load += new System.EventHandler(this.FormHastaEkleSilGüncelle_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

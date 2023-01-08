@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//MERHABA DÜNYAaaa
+//
 namespace Hastane
 {
     public partial class FormGiris : Form
@@ -26,7 +26,8 @@ namespace Hastane
             formHastaEkleSilGüncelle.Show();
             FormBolumEkle formBolumEkle = new FormBolumEkle();
             formBolumEkle.Show();
-
+            FormDoktor formDoktor = new FormDoktor();
+            formDoktor.Show();
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)

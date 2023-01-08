@@ -52,6 +52,12 @@
     <Compile Include="FormBolumEkle.Designer.cs">
       <DependentUpon>FormBolumEkle.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDoktor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDoktor.Designer.cs">
+      <DependentUpon>FormDoktor.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormGiris.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormBolumEkle.resx">
       <DependentUpon>FormBolumEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDoktor.resx">
+      <DependentUpon>FormDoktor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormGiris.resx">
       <DependentUpon>FormGiris.cs</DependentUpon>
