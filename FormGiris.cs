@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//SİSTEM 1
+
 namespace Hastane
 {
     public partial class FormGiris : Form
@@ -16,7 +16,7 @@ namespace Hastane
         {
             InitializeComponent();
         }
-
+        //SİSTEM 1
 
         private void FormGiris_Load(object sender, EventArgs e)
         {
