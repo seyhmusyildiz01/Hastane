@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//MERHABA DÜNYA
+//MERHABA DÜNYAaaa
 namespace Hastane
 {
     public partial class FormGiris : Form
