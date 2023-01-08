@@ -7,7 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+<<<<<<< HEAD
+
 //
+
+=======
+//
+>>>>>>> a39df78f70db342974166749cc7065111591e5ca
 namespace Hastane
 {
     public partial class FormGiris : Form
@@ -16,8 +22,7 @@ namespace Hastane
         {
             InitializeComponent();
         }
-
-
+        //3333 SAD
         private void FormGiris_Load(object sender, EventArgs e)
         {
             FormSekreter formSekreter = new FormSekreter();
@@ -30,7 +35,11 @@ namespace Hastane
             formDoktor.Show();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        { }
+
         private void groupBox1_Enter(object sender, EventArgs e)
+
         {
 
         }
