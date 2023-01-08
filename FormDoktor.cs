@@ -10,14 +10,18 @@ using System.Windows.Forms;
 
 namespace Hastane
 {
-    public partial class FormHastaEkleSilGüncelle : Form
+    
+    //değiştirildi
+    
+    public partial class FormDoktor : Form
     {
-        public FormHastaEkleSilGüncelle()
+
+        public FormDoktor()
         {
             InitializeComponent();
         }
 
-        private void FormHastaEkleSilGüncelle_Load(object sender, EventArgs e)
+        private void FormDoktor_Load(object sender, EventArgs e)
         {
 
         }
