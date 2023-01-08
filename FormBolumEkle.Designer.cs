@@ -50,9 +50,10 @@ namespace Hastane
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 54);
+            this.label1.Location = new System.Drawing.Point(8, 35);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 25);
+            this.label1.Size = new System.Drawing.Size(83, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bölüm Seç :";
             // 
@@ -63,18 +64,20 @@ namespace Hastane
             this.comboBox1.Items.AddRange(new object[] {
             "Bölümler",
             "Bölüm Ekle"});
-            this.comboBox1.Location = new System.Drawing.Point(172, 48);
+            this.comboBox1.Location = new System.Drawing.Point(115, 31);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(241, 34);
+            this.comboBox1.Size = new System.Drawing.Size(162, 26);
             this.comboBox1.TabIndex = 15;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 10);
+            this.label2.Location = new System.Drawing.Point(4, 6);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 25);
+            this.label2.Size = new System.Drawing.Size(79, 17);
             this.label2.TabIndex = 16;
             this.label2.Text = "Bölüm Adı :";
             // 
@@ -85,9 +88,11 @@ namespace Hastane
             this.groupBox2.Controls.Add(this.comboBox1);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox2.Location = new System.Drawing.Point(0, 44);
+            this.groupBox2.Location = new System.Drawing.Point(0, 29);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(458, 210);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Size = new System.Drawing.Size(305, 136);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Randevu Güncelle";
@@ -97,9 +102,10 @@ namespace Hastane
             this.panel_Bolum_Ekle.Controls.Add(this.label3);
             this.panel_Bolum_Ekle.Controls.Add(this.textBox2);
             this.panel_Bolum_Ekle.Controls.Add(this.button4);
-            this.panel_Bolum_Ekle.Location = new System.Drawing.Point(6, 82);
+            this.panel_Bolum_Ekle.Location = new System.Drawing.Point(4, 53);
+            this.panel_Bolum_Ekle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel_Bolum_Ekle.Name = "panel_Bolum_Ekle";
-            this.panel_Bolum_Ekle.Size = new System.Drawing.Size(446, 125);
+            this.panel_Bolum_Ekle.Size = new System.Drawing.Size(297, 81);
             this.panel_Bolum_Ekle.TabIndex = 22;
             this.panel_Bolum_Ekle.Visible = false;
             // 
@@ -107,26 +113,29 @@ namespace Hastane
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 10);
+            this.label3.Location = new System.Drawing.Point(4, 6);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 25);
+            this.label3.Size = new System.Drawing.Size(79, 17);
             this.label3.TabIndex = 16;
             this.label3.Text = "Bölüm Adı :";
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(166, 6);
+            this.textBox2.Location = new System.Drawing.Point(111, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(241, 32);
+            this.textBox2.Size = new System.Drawing.Size(162, 24);
             this.textBox2.TabIndex = 20;
             // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(289, 61);
+            this.button4.Location = new System.Drawing.Point(193, 40);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(118, 52);
+            this.button4.Size = new System.Drawing.Size(79, 34);
             this.button4.TabIndex = 18;
             this.button4.Text = "Ekle";
             this.button4.UseVisualStyleBackColor = true;
@@ -137,18 +146,32 @@ namespace Hastane
             this.panel_BolumGuncelle.Controls.Add(this.label2);
             this.panel_BolumGuncelle.Controls.Add(this.textBox1);
             this.panel_BolumGuncelle.Controls.Add(this.button1);
+<<<<<<< HEAD
             this.panel_BolumGuncelle.Location = new System.Drawing.Point(6, 82);
             this.panel_BolumGuncelle.Name = "panel_BolumGuncelle";
             this.panel_BolumGuncelle.Size = new System.Drawing.Size(446, 125);
+=======
+            this.panel_BolumGuncelle.Location = new System.Drawing.Point(4, 53);
+            this.panel_BolumGuncelle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel_BolumGuncelle.Name = "panel_BolumGuncelle";
+            this.panel_BolumGuncelle.Size = new System.Drawing.Size(297, 81);
+>>>>>>> 79fbb34b7bfcdc9c894308ffec30159d381aa701
             this.panel_BolumGuncelle.TabIndex = 21;
             this.panel_BolumGuncelle.Visible = false;
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.button2.Location = new System.Drawing.Point(166, 61);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(107, 52);
+=======
+            this.button2.Location = new System.Drawing.Point(111, 40);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(71, 34);
+>>>>>>> 79fbb34b7bfcdc9c894308ffec30159d381aa701
             this.button2.TabIndex = 19;
             this.button2.Text = "Sil";
             this.button2.UseVisualStyleBackColor = true;
@@ -156,27 +179,42 @@ namespace Hastane
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.textBox1.Location = new System.Drawing.Point(166, 6);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(241, 32);
+=======
+            this.textBox1.Location = new System.Drawing.Point(111, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(162, 24);
+>>>>>>> 79fbb34b7bfcdc9c894308ffec30159d381aa701
             this.textBox1.TabIndex = 20;
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.button1.Location = new System.Drawing.Point(289, 61);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(118, 52);
+=======
+            this.button1.Location = new System.Drawing.Point(193, 40);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(79, 34);
+>>>>>>> 79fbb34b7bfcdc9c894308ffec30159d381aa701
             this.button1.TabIndex = 18;
             this.button1.Text = "Güncelle";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // FormBolumEkle
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(458, 254);
+            this.ClientSize = new System.Drawing.Size(305, 165);
             this.Controls.Add(this.groupBox2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormBolumEkle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormBolumEkle";

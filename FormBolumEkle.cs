@@ -19,7 +19,11 @@ namespace Hastane
 
         private void FormBolumEkle_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             //Sa 
+=======
+
+>>>>>>> 79fbb34b7bfcdc9c894308ffec30159d381aa701
         }
     }
 }
