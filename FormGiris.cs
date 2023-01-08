@@ -17,7 +17,7 @@ namespace Hastane
             InitializeComponent();
         }
         //SİSTEM 1
-        // SİSTEM 2
+        // SİSTEM 2 222222
         private void FormGiris_Load(object sender, EventArgs e)
         {
             FormSekreter formSekreter = new FormSekreter();
