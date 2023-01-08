@@ -16,7 +16,7 @@ namespace Hastane
         {
             InitializeComponent();
         }
-        //3333
+        //3333 SAD
         private void FormGiris_Load(object sender, EventArgs e)
         {
             FormSekreter formSekreter = new FormSekreter();
