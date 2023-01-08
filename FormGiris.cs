@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//
+
 namespace Hastane
 {
     public partial class FormGiris : Form
@@ -25,7 +27,8 @@ namespace Hastane
             formHastaEkleSilGüncelle.Show();
             FormBolumEkle formBolumEkle = new FormBolumEkle();
             formBolumEkle.Show();
-
+            FormDoktor formDoktor = new FormDoktor();
+            formDoktor.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
