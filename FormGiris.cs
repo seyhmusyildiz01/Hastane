@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+//SİSTEM 1
 namespace Hastane
 {
     public partial class FormGiris : Form
@@ -28,7 +28,7 @@ namespace Hastane
             formBolumEkle.Show();
 
         }
-        //SİSTEM 1
+        
         private void button1_Click(object sender, EventArgs e)
         {
 
