@@ -10,11 +10,20 @@ using System.Windows.Forms;
 
 namespace Hastane
 {
+    
+    //değiştirildi
+    
     public partial class FormDoktor : Form
     {
+
         public FormDoktor()
         {
             InitializeComponent();
+        }
+
+        private void FormDoktor_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
