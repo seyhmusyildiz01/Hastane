@@ -16,7 +16,7 @@ namespace Hastane
         {
             InitializeComponent();
         }
-        //111111111111111111111
+        //22222
         private void FormGiris_Load(object sender, EventArgs e)
         {
             FormSekreter formSekreter = new FormSekreter();
