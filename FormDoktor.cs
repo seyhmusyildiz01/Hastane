@@ -48,5 +48,22 @@ namespace Hastane
         {
 
         }
+
+        private void Btn_pdf_Click(object sender, EventArgs e)
+        {
+            iTextSharp.text.Document raporum = new iTextSharp.text.Document();
+            PdfWriter.GetInstance(raporum, new FileStream("C:HASTA RAPORU.Pdf ", FileMode.Create));
+            raporum.AddTitle(Txt_HastaAdı.Text);
+            raporum.AddCreationDate();
+            
+            if (raporum.IsOpen()== false)
+            {
+                raporum.Open();
+
+            }
+            raporum.Add(new Paragraph(Txt_HastaAdı  + Txt_DoktorGorusu.Text ));
+            raporum.Close();
+
+        }
     }
 }
