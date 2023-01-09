@@ -68,9 +68,9 @@ namespace Hastane
             // 
             this.groupBox_Randevular.Controls.Add(this.dataGridView_RandevuListesi);
             this.groupBox_Randevular.Dock = System.Windows.Forms.DockStyle.Right;
-            this.groupBox_Randevular.Location = new System.Drawing.Point(636, 36);
+            this.groupBox_Randevular.Location = new System.Drawing.Point(636, 33);
             this.groupBox_Randevular.Name = "groupBox_Randevular";
-            this.groupBox_Randevular.Size = new System.Drawing.Size(1308, 1080);
+            this.groupBox_Randevular.Size = new System.Drawing.Size(1308, 1083);
             this.groupBox_Randevular.TabIndex = 0;
             this.groupBox_Randevular.TabStop = false;
             this.groupBox_Randevular.Text = "Randevular";
@@ -105,7 +105,7 @@ namespace Hastane
             this.yardımToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1944, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(1944, 33);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -194,6 +194,7 @@ namespace Hastane
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(241, 32);
             this.textBox1.TabIndex = 15;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox3
             // 
