@@ -29,38 +29,38 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Btn_pdf = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Txt_DoktorGorusu = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Txt_Mail = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.Txt_Cınsıyet = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Txt_HastaSikayet = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.Txt_HastaAdı = new System.Windows.Forms.TextBox();
-            this.Com_Tahlıl = new System.Windows.Forms.ComboBox();
+            this.Txt_HastaAdi = new System.Windows.Forms.TextBox();
+            this.Com_Tahlil = new System.Windows.Forms.ComboBox();
             this.Txt_HastaSoyad = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.Txt_DoktorGorusu = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.label6 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.Txt_Cinsiyet = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.label7 = new System.Windows.Forms.Label();
-            this.Txt_Mail = new System.Windows.Forms.TextBox();
-            this.Btn_pdf = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -93,6 +93,46 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Hasta Bilgileri";
             // 
+            // Btn_pdf
+            // 
+            this.Btn_pdf.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.Btn_pdf.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_pdf.Location = new System.Drawing.Point(422, 398);
+            this.Btn_pdf.Name = "Btn_pdf";
+            this.Btn_pdf.Size = new System.Drawing.Size(111, 58);
+            this.Btn_pdf.TabIndex = 36;
+            this.Btn_pdf.Text = "PDF Oluştur";
+            this.Btn_pdf.UseVisualStyleBackColor = false;
+            this.Btn_pdf.Click += new System.EventHandler(this.Btn_pdf_Click);
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(3, 518);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(568, 59);
+            this.button1.TabIndex = 35;
+            this.button1.Text = "KAYDET";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // Txt_DoktorGorusu
+            // 
+            this.Txt_DoktorGorusu.Location = new System.Drawing.Point(155, 357);
+            this.Txt_DoktorGorusu.Multiline = true;
+            this.Txt_DoktorGorusu.Name = "Txt_DoktorGorusu";
+            this.Txt_DoktorGorusu.Size = new System.Drawing.Size(213, 102);
+            this.Txt_DoktorGorusu.TabIndex = 34;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(33, 357);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(109, 17);
+            this.label5.TabIndex = 33;
+            this.label5.Text = "Doktor Görüşü :";
+            // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -100,14 +140,14 @@
             this.panel1.AutoSize = true;
             this.panel1.Controls.Add(this.Txt_Mail);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.Txt_Cinsiyet);
+            this.panel1.Controls.Add(this.Txt_Cınsıyet);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.Txt_HastaSikayet);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.Txt_HastaAdı);
-            this.panel1.Controls.Add(this.Com_Tahlıl);
+            this.panel1.Controls.Add(this.Txt_HastaAdi);
+            this.panel1.Controls.Add(this.Com_Tahlil);
             this.panel1.Controls.Add(this.Txt_HastaSoyad);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Location = new System.Drawing.Point(24, 58);
@@ -115,6 +155,43 @@
             this.panel1.Size = new System.Drawing.Size(344, 290);
             this.panel1.TabIndex = 32;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // Txt_Mail
+            // 
+            this.Txt_Mail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Txt_Mail.Location = new System.Drawing.Point(131, 136);
+            this.Txt_Mail.Name = "Txt_Mail";
+            this.Txt_Mail.Size = new System.Drawing.Size(151, 23);
+            this.Txt_Mail.TabIndex = 35;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.Location = new System.Drawing.Point(9, 136);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(85, 18);
+            this.label7.TabIndex = 34;
+            this.label7.Text = "Mail Adres :";
+            // 
+            // Txt_Cınsıyet
+            // 
+            this.Txt_Cınsıyet.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Txt_Cınsıyet.Location = new System.Drawing.Point(131, 93);
+            this.Txt_Cınsıyet.Name = "Txt_Cınsıyet";
+            this.Txt_Cınsıyet.Size = new System.Drawing.Size(151, 23);
+            this.Txt_Cınsıyet.TabIndex = 33;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Location = new System.Drawing.Point(9, 99);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(68, 18);
+            this.label6.TabIndex = 32;
+            this.label6.Text = "Cinsiyet :";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label2
             // 
@@ -158,21 +235,21 @@
             this.label8.Text = "Hasta Şikayeti :";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
-            // Txt_HastaAdı
+            // Txt_HastaAdi
             // 
-            this.Txt_HastaAdı.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Txt_HastaAdı.Location = new System.Drawing.Point(131, 14);
-            this.Txt_HastaAdı.Name = "Txt_HastaAdı";
-            this.Txt_HastaAdı.Size = new System.Drawing.Size(151, 23);
-            this.Txt_HastaAdı.TabIndex = 8;
+            this.Txt_HastaAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Txt_HastaAdi.Location = new System.Drawing.Point(131, 14);
+            this.Txt_HastaAdi.Name = "Txt_HastaAdi";
+            this.Txt_HastaAdi.Size = new System.Drawing.Size(151, 23);
+            this.Txt_HastaAdi.TabIndex = 8;
             // 
-            // Com_Tahlıl
+            // Com_Tahlil
             // 
-            this.Com_Tahlıl.FormattingEnabled = true;
-            this.Com_Tahlıl.Location = new System.Drawing.Point(131, 171);
-            this.Com_Tahlıl.Name = "Com_Tahlıl";
-            this.Com_Tahlıl.Size = new System.Drawing.Size(151, 24);
-            this.Com_Tahlıl.TabIndex = 11;
+            this.Com_Tahlil.FormattingEnabled = true;
+            this.Com_Tahlil.Location = new System.Drawing.Point(131, 171);
+            this.Com_Tahlil.Name = "Com_Tahlil";
+            this.Com_Tahlil.Size = new System.Drawing.Size(151, 24);
+            this.Com_Tahlil.TabIndex = 11;
             // 
             // Txt_HastaSoyad
             // 
@@ -213,34 +290,6 @@
             this.label1.Size = new System.Drawing.Size(115, 17);
             this.label1.TabIndex = 4;
             this.label1.Text = "Hasta Kimlik No :";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(33, 357);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(109, 17);
-            this.label5.TabIndex = 33;
-            this.label5.Text = "Doktor Görüşü :";
-            // 
-            // Txt_DoktorGorusu
-            // 
-            this.Txt_DoktorGorusu.Location = new System.Drawing.Point(155, 357);
-            this.Txt_DoktorGorusu.Multiline = true;
-            this.Txt_DoktorGorusu.Name = "Txt_DoktorGorusu";
-            this.Txt_DoktorGorusu.Size = new System.Drawing.Size(213, 102);
-            this.Txt_DoktorGorusu.TabIndex = 34;
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(3, 518);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(568, 59);
-            this.button1.TabIndex = 35;
-            this.button1.Text = "KAYDET";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -283,17 +332,6 @@
             this.dataGridView2.Size = new System.Drawing.Size(261, 520);
             this.dataGridView2.TabIndex = 0;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(9, 99);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 18);
-            this.label6.TabIndex = 32;
-            this.label6.Text = "Cinsiyet :";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
             // tabControl1
             // 
             this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -330,62 +368,24 @@
             // 
             // chart1
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(3, 12);
             this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(328, 530);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
-            // 
-            // Txt_Cinsiyet
-            // 
-            this.Txt_Cinsiyet.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Txt_Cinsiyet.Location = new System.Drawing.Point(131, 93);
-            this.Txt_Cinsiyet.Name = "Txt_Cinsiyet";
-            this.Txt_Cinsiyet.Size = new System.Drawing.Size(151, 23);
-            this.Txt_Cinsiyet.TabIndex = 33;
             // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(9, 136);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(85, 18);
-            this.label7.TabIndex = 34;
-            this.label7.Text = "Mail Adres :";
-            // 
-            // Txt_Mail
-            // 
-            this.Txt_Mail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Txt_Mail.Location = new System.Drawing.Point(131, 136);
-            this.Txt_Mail.Name = "Txt_Mail";
-            this.Txt_Mail.Size = new System.Drawing.Size(151, 23);
-            this.Txt_Mail.TabIndex = 35;
-            // 
-            // Btn_pdf
-            // 
-            this.Btn_pdf.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.Btn_pdf.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_pdf.Location = new System.Drawing.Point(422, 398);
-            this.Btn_pdf.Name = "Btn_pdf";
-            this.Btn_pdf.Size = new System.Drawing.Size(111, 58);
-            this.Btn_pdf.TabIndex = 36;
-            this.Btn_pdf.Text = "PDF Oluştur";
-            this.Btn_pdf.UseVisualStyleBackColor = false;
-            this.Btn_pdf.Click += new System.EventHandler(this.Btn_pdf_Click);
             // 
             // FormDoktor
             // 
@@ -421,13 +421,13 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox Txt_HastaSoyad;
-        private System.Windows.Forms.TextBox Txt_HastaAdı;
+        private System.Windows.Forms.TextBox Txt_HastaAdi;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox Com_Tahlıl;
+        private System.Windows.Forms.ComboBox Com_Tahlil;
         private System.Windows.Forms.TextBox Txt_HastaSikayet;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel1;
@@ -443,7 +443,7 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
-        private System.Windows.Forms.TextBox Txt_Cinsiyet;
+        private System.Windows.Forms.TextBox Txt_Cınsıyet;
         private System.Windows.Forms.Button Btn_pdf;
         private System.Windows.Forms.TextBox Txt_Mail;
         private System.Windows.Forms.Label label7;

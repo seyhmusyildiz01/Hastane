@@ -53,7 +53,7 @@ namespace Hastane
         {
             iTextSharp.text.Document raporum = new iTextSharp.text.Document();
             PdfWriter.GetInstance(raporum, new FileStream("C:HASTA RAPORU.Pdf ", FileMode.Create));
-            raporum.AddTitle(Txt_HastaAdı.Text);
+            raporum.AddTitle(Txt_HastaAdi.Text);
             raporum.AddCreationDate();
             
             if (raporum.IsOpen()== false)
