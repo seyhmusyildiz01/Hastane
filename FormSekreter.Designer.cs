@@ -39,6 +39,8 @@ namespace Hastane
             this.hastaEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yardımToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -57,8 +59,12 @@ namespace Hastane
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.doktorEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sekreterEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.silToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hastaSilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.doktorSilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sekreterSilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox_Randevular.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_RandevuListesi)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -71,9 +77,9 @@ namespace Hastane
             this.groupBox_Randevular.Controls.Add(this.dataGridView_RandevuListesi);
             this.groupBox_Randevular.Dock = System.Windows.Forms.DockStyle.Right;
             this.groupBox_Randevular.Location = new System.Drawing.Point(411, 24);
-            this.groupBox_Randevular.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox_Randevular.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox_Randevular.Name = "groupBox_Randevular";
-            this.groupBox_Randevular.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox_Randevular.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox_Randevular.Size = new System.Drawing.Size(872, 666);
             this.groupBox_Randevular.TabIndex = 0;
             this.groupBox_Randevular.TabStop = false;
@@ -84,7 +90,7 @@ namespace Hastane
             this.dataGridView_RandevuListesi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView_RandevuListesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_RandevuListesi.Location = new System.Drawing.Point(4, 99);
-            this.dataGridView_RandevuListesi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView_RandevuListesi.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView_RandevuListesi.Name = "dataGridView_RandevuListesi";
             this.dataGridView_RandevuListesi.RowHeadersWidth = 62;
             this.dataGridView_RandevuListesi.RowTemplate.Height = 28;
@@ -94,7 +100,7 @@ namespace Hastane
             // button_RandevuEkle
             // 
             this.button_RandevuEkle.Location = new System.Drawing.Point(201, 201);
-            this.button_RandevuEkle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_RandevuEkle.Margin = new System.Windows.Forms.Padding(2);
             this.button_RandevuEkle.Name = "button_RandevuEkle";
             this.button_RandevuEkle.Size = new System.Drawing.Size(73, 41);
             this.button_RandevuEkle.TabIndex = 1;
@@ -107,7 +113,8 @@ namespace Hastane
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.oturumToolStripMenuItem,
             this.düzenleToolStripMenuItem,
-            this.yardımToolStripMenuItem});
+            this.yardımToolStripMenuItem,
+            this.silToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
@@ -126,13 +133,15 @@ namespace Hastane
             // çıkışToolStripMenuItem
             // 
             this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
-            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
+            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.çıkışToolStripMenuItem.Text = "Çıkış";
             // 
             // düzenleToolStripMenuItem
             // 
             this.düzenleToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.hastaEkleToolStripMenuItem});
+            this.hastaEkleToolStripMenuItem,
+            this.doktorEkleToolStripMenuItem,
+            this.sekreterEkleToolStripMenuItem});
             this.düzenleToolStripMenuItem.Name = "düzenleToolStripMenuItem";
             this.düzenleToolStripMenuItem.Size = new System.Drawing.Size(61, 22);
             this.düzenleToolStripMenuItem.Text = "Düzenle";
@@ -140,7 +149,7 @@ namespace Hastane
             // hastaEkleToolStripMenuItem
             // 
             this.hastaEkleToolStripMenuItem.Name = "hastaEkleToolStripMenuItem";
-            this.hastaEkleToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.hastaEkleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.hastaEkleToolStripMenuItem.Text = "Hasta Ekle";
             // 
             // yardımToolStripMenuItem
@@ -161,13 +170,37 @@ namespace Hastane
             this.groupBox2.Controls.Add(this.comboBox1);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Location = new System.Drawing.Point(8, 23);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(299, 477);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Randevu Güncelle";
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "Kadın",
+            "Erkek"});
+            this.comboBox4.Location = new System.Drawing.Point(119, 117);
+            this.comboBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(162, 26);
+            this.comboBox4.TabIndex = 22;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(8, 122);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(65, 17);
+            this.label9.TabIndex = 21;
+            this.label9.Text = "Cinsiyet :";
             // 
             // panel1
             // 
@@ -184,7 +217,7 @@ namespace Hastane
             this.panel1.Controls.Add(this.dateTimePicker1);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Location = new System.Drawing.Point(7, 152);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(287, 248);
             this.panel1.TabIndex = 16;
@@ -192,7 +225,7 @@ namespace Hastane
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(114, 201);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(73, 41);
             this.button1.TabIndex = 30;
@@ -203,7 +236,7 @@ namespace Hastane
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(114, 6);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(162, 24);
             this.textBox1.TabIndex = 15;
@@ -212,7 +245,7 @@ namespace Hastane
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(114, 122);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(162, 76);
@@ -256,7 +289,7 @@ namespace Hastane
             this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(114, 90);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(162, 26);
             this.comboBox3.TabIndex = 27;
@@ -265,7 +298,7 @@ namespace Hastane
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(114, 33);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(162, 24);
             this.textBox2.TabIndex = 22;
@@ -285,7 +318,7 @@ namespace Hastane
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Location = new System.Drawing.Point(114, 64);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(162, 24);
             this.dateTimePicker1.TabIndex = 24;
@@ -305,7 +338,7 @@ namespace Hastane
             // 
             this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maskedTextBox1.Location = new System.Drawing.Point(119, 89);
-            this.maskedTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.maskedTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.maskedTextBox1.Mask = "00000000000";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(162, 24);
@@ -327,7 +360,7 @@ namespace Hastane
             this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(119, 61);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(162, 26);
             this.comboBox2.TabIndex = 17;
@@ -348,7 +381,7 @@ namespace Hastane
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(119, 33);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(162, 26);
             this.comboBox1.TabIndex = 15;
@@ -364,29 +397,45 @@ namespace Hastane
             this.label1.TabIndex = 0;
             this.label1.Text = "Bölüm Seç :";
             // 
-            // label9
+            // doktorEkleToolStripMenuItem
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(8, 122);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(65, 17);
-            this.label9.TabIndex = 21;
-            this.label9.Text = "Cinsiyet :";
+            this.doktorEkleToolStripMenuItem.Name = "doktorEkleToolStripMenuItem";
+            this.doktorEkleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.doktorEkleToolStripMenuItem.Text = "Doktor Ekle";
             // 
-            // comboBox4
+            // sekreterEkleToolStripMenuItem
             // 
-            this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "Kadın",
-            "Erkek"});
-            this.comboBox4.Location = new System.Drawing.Point(119, 117);
-            this.comboBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(162, 26);
-            this.comboBox4.TabIndex = 22;
+            this.sekreterEkleToolStripMenuItem.Name = "sekreterEkleToolStripMenuItem";
+            this.sekreterEkleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sekreterEkleToolStripMenuItem.Text = "Sekreter Ekle";
+            // 
+            // silToolStripMenuItem
+            // 
+            this.silToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.hastaSilToolStripMenuItem,
+            this.doktorSilToolStripMenuItem,
+            this.sekreterSilToolStripMenuItem});
+            this.silToolStripMenuItem.Name = "silToolStripMenuItem";
+            this.silToolStripMenuItem.Size = new System.Drawing.Size(31, 22);
+            this.silToolStripMenuItem.Text = "Sil";
+            // 
+            // hastaSilToolStripMenuItem
+            // 
+            this.hastaSilToolStripMenuItem.Name = "hastaSilToolStripMenuItem";
+            this.hastaSilToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hastaSilToolStripMenuItem.Text = "Hasta Sil";
+            // 
+            // doktorSilToolStripMenuItem
+            // 
+            this.doktorSilToolStripMenuItem.Name = "doktorSilToolStripMenuItem";
+            this.doktorSilToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.doktorSilToolStripMenuItem.Text = "Doktor Sil";
+            // 
+            // sekreterSilToolStripMenuItem
+            // 
+            this.sekreterSilToolStripMenuItem.Name = "sekreterSilToolStripMenuItem";
+            this.sekreterSilToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sekreterSilToolStripMenuItem.Text = "Sekreter Sil";
             // 
             // FormSekreter
             // 
@@ -397,7 +446,7 @@ namespace Hastane
             this.Controls.Add(this.groupBox_Randevular);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormSekreter";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormSekreter";
@@ -447,5 +496,11 @@ namespace Hastane
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ToolStripMenuItem doktorEkleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sekreterEkleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem silToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hastaSilToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem doktorSilToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sekreterSilToolStripMenuItem;
     }
 }

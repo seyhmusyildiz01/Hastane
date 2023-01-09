@@ -61,7 +61,7 @@ namespace Hastane
                 raporum.Open();
 
             }
-            raporum.Add(new Paragraph(Txt_HastaAdı  + Txt_DoktorGorusu.Text ));
+            raporum.Add(new Paragraph(Txt_DoktorGorusu.Text ));
             raporum.Close();
 
         }
