@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
 
 namespace Hastane
 {
@@ -26,9 +29,24 @@ namespace Hastane
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void label8_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Merhaba Şeyhmus");
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
