@@ -8,6 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+<<<<<<< HEAD
+=======
+//
+
+
+>>>>>>> 07e5c7f6c9ba6d9b0a55f4b74b3136d60f664814
 namespace Hastane
 {
     public partial class FormGiris : Form

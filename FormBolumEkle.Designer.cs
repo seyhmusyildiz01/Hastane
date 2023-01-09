@@ -149,6 +149,10 @@ namespace Hastane
 
             this.panel_BolumGuncelle.Location = new System.Drawing.Point(6, 82);
             this.panel_BolumGuncelle.Name = "panel_BolumGuncelle";
+<<<<<<< HEAD
+=======
+            this.panel_BolumGuncelle.Size = new System.Drawing.Size(446, 125);
+>>>>>>> 07e5c7f6c9ba6d9b0a55f4b74b3136d60f664814
 
             this.panel_BolumGuncelle.Location = new System.Drawing.Point(4, 53);
             this.panel_BolumGuncelle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);

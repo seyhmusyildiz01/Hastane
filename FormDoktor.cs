@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
 
 namespace Hastane
 {
@@ -26,6 +29,45 @@ namespace Hastane
 
         }
 
+<<<<<<< HEAD
   
+=======
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_pdf_Click(object sender, EventArgs e)
+        {
+            iTextSharp.text.Document raporum = new iTextSharp.text.Document();
+            PdfWriter.GetInstance(raporum, new FileStream("C:HASTA RAPORU.Pdf ", FileMode.Create));
+            raporum.AddTitle(Txt_HastaAdi.Text);
+            raporum.AddCreationDate();
+            
+            if (raporum.IsOpen()== false)
+            {
+                raporum.Open();
+
+            }
+            raporum.Add(new Paragraph(Txt_DoktorGorusu.Text ));
+            raporum.Close();
+
+        }
+>>>>>>> 07e5c7f6c9ba6d9b0a55f4b74b3136d60f664814
     }
 }
